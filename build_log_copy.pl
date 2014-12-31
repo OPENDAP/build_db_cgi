@@ -11,7 +11,7 @@ use strict;
 use CGI qw(:standard);
 use CGI::Carp qw(warningsToBrowser fatalsToBrowser);
 
-my $builds = "/homes/sites/builds";
+my $builds = "/home/sites/builds";
 my $logs   = "$builds/logs";
 
 my $OK_CHARS='-a-zA-Z0-9_.'; # A restrictive list of metacharacters
