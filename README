@@ -2,8 +2,10 @@
 This is a very simple system to record builds done on remote machines.
 It is part of a low-budget nightly-build system we've used since 2005.
 One CGI is used to access the results of a 'build db' (a text file)
-with one record (line) for each build. Two CGIs are used to upload
+with one record (line) for each build. The 'reader' CGI returns an
+HTML table where summary information about a component is shown and a
+link to a verbose log is provided. Two CGIs are used to upload
 information about a build. One of the CGIs uploads a log for the
-build, whcih can be very verbose and a second uploads summary stats
-about a particualr component, if it built, passed tests, built RPMs,
+build, whcih can be very verbose, and a second uploads summary stats
+about a particular component, if it built, passed tests, built RPMs,
 etc.
